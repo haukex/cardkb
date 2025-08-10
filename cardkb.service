@@ -1,0 +1,15 @@
+[Unit]
+Description=CardKB
+After=multi-user.target
+# only allow 5 starts in 5 minutes
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=idle
+ExecStart=/usr/local/lib/cardkb/__main__.py
+Restart=on-failure
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target
