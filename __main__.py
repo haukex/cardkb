@@ -3,7 +3,6 @@
 import smbus
 from uinput import Device 
 from ascii_codes import ascii
-from keys import keys
 import sys
 import time
 import traceback
@@ -13,7 +12,7 @@ i2c_bus = 1 if len(sys.argv) <= 1 else int(sys.argv[1])
 bus = smbus.SMBus(i2c_bus)
 address = 0x5f
 
-
+keys = [key for keylist in ascii.values() for key in keylist]
 with Device(keys) as device:
     while True:
         try: 
