@@ -1,5 +1,4 @@
-#!/usr/bin/python
-
+#!/usr/bin/python3
 import smbus
 from uinput import Device 
 from ascii_codes import ascii
