@@ -1,0 +1,13 @@
+
+Unmapped keys
+0x7F - Shift+Backspace (Del)
+0x80: [uinput.KEY_LEFTCTRL, uinput.KEY_ESC],
+
+Are currently mapped but I could consider remapping (e.g. Home, End, etc.)
+0x8B: [uinput.KEY_LEFTCTRL, uinput.KEY_BACKSPACE],
+0x98: [uinput.KEY_LEFTCTRL, uinput.KEY_LEFT],
+0x99: [uinput.KEY_LEFTCTRL, uinput.KEY_UP],
+0xA4: [uinput.KEY_LEFTCTRL, uinput.KEY_DOWN],
+0xA5: [uinput.KEY_LEFTCTRL, uinput.KEY_RIGHT],
+0x8C: [uinput.KEY_LEFTCTRL, uinput.KEY_TAB],
+
